@@ -1,0 +1,61 @@
+date commands:
+---------------
+We can use date command to dispaly date and time
+
+Various options:
+----------------
+1. date +%D : It will display only date in the form : mm/dd/yy
+------------
+2. date +%T : It will display only time in the formate : hh:mm:ss
+------------
+3. date +%d ===> only day value display 
+-----------
+4. date +%m ===> only month value display
+-----------
+5. date +%y ===> only year valaue in yy from
+-----------
+6. date +%Y ===> only Year value in yyyy form
+
+7. date +%H ===> only hours value in 24Hours formate
+-----------
+8. date +%M ===> only minutes value in 24Hours formate
+------------
+9. date +%S ===> only seconds value in 24Hours formate
+-----------
+
+## All Commands checks Related of Date by using man date ##
+                                --------        ---------
+
+1. To display current system date in dd-mm--yyyy formate 
+date +%d-%m-%Y
+date +%d:%m:%Y
+
+log files ===> A new log file has to create
+log file name should include date value also
+
+server_27032020.log
+server_28032020.log
+
+such type of file called time stamped file when creates file include date value also
+
+time stamped file (file name with date and time)
+
+Create an empty file where file name contains curent system date?
+touch server_$(date +%d%m%Y%H%M%S).log
+
+27032020 this value how to generate?
+==> $(date +%d%m%Y)
+
+command substitution
+
+remove all the file start with a using this command : (rm a*)
+
+
+Calender command:
+------------------
+cal  ---> To display current month calender by default
+cal 2020 ---> To display complete year calender
+cal 1 ---> TO display First year calender
+1 to 9999 show us calender then above this not suppert or show
+
+cal 01 2020
